@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title will be displayed on browser tab. -->
+	<title>Archery Club</title>
+	<!-- Link tag is used to link the css file. -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- The code represents the header section of a website. -->
+	<header>
+		 <!-- Logo element containing an image and a text span. -->
+		<div class="logo">
+			<img src="css/Logo.png" alt="Archery Club Logo">
+			<span>For archers of all Levels.</span>
+		</div>
+		<!-- The navigation menu is represented using an unordered list. -->
+		<nav>
+			<ul>
+				<!-- Each list item in the menu is a link to a different section of the website. -->
+				<!-- The links use anchor tags with href attributes set to the ID of the corresponding section. -->
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#membership">Membership Fee</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- End of header section -->
+
+	<!-- The main section containing the banner slider and caption -->
+	<main>
+		<!-- The banner slider section -->
+		<section id="banner">
+		  <!-- The slider container containing the slide images -->
+		  <div class="slider">
+		    <img src="css/Image1.jpg" alt="Slide 1" class="active">
+		    <img src="css/Image2.jpg" alt="Slide 2">
+		    <img src="css/Image3.jpg" alt="Slide 3">
+		    <img src="css/Image4.jpg" alt="Slide 4">
+		  </div>
+		  <!-- The slide indicators container for each slide -->
+		  <div class="slide-indicators">
+		    <span class="active"></span>
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		  </div>
+		  <!-- The slider controls container for prev, next buttons and slide indicators -->
+		  <div class="slider-controls">
+            <button id="prev"><i class="fas fa-angle-left"><</i></button>
+            <div class="slide-indicators"></div>
+            <button id="next">><i class="fas fa-angle-right"></i></button>
+          </div>
+          <!-- The caption container for the welcome message -->
+		  <div class="caption">
+		    <h2>Welcome to Archery Club</h2>
+		    <p>Join us and improve your archery skills!</p>
+		  </div>
+		</section>
+		<!-- End of banner section -->
+
+		<!-- Club welcome information section -->
+		<div class="club-info">
+		  <!-- Club image -->
+		  <img src="css/welcome.jpg" alt="Image description" style="float: left; margin-right: 10px;">
+		  <!-- Club information -->
+		  <h2>Welcome</h2>
+		  <p>Welcome to Bendigo Target Archery Club. The club started in 1948 and is one of the oldest target archery clubs in Victoria.</p>
+		  <p>We’re a family-friendly target archery club located at the Bendigo Racecourse off Golf Course Rd. Our facilities offer target, indoor and clout archery plus field archery practice and we host club, state and national level events.</p>
+		  <p>Please note that we don’t allow casual walk-ins. You must be an Archery Australia member or be participating in a course to shoot at our club.</p>
+		 <p>If you’re new to archery we hold archery courses each month. Please visit our <a href="#try-archery">Try Archery</a> section for further details. If you’re an experienced archer and would like to join our club, please contact us to arrange an appointment.</p>
+	    </div>
+	    <!-- End of club information section -->
+
+	    <!-- This section provides information about the Bendigo Target Archery Club -->
+	    <section id="about">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col-lg-12">
+		      	<!-- An image representing the club -->
+		      	<img src="css/aboutus.jpg" alt="Image description" style="float: left; margin-right: 10px;">
+		        <h2>About Us</h2>
+		        <!-- A brief description of the club -->
+		        <p>The Bendifo Target Archery Club started in 1948 and is one of the oldest target archery clubs in Victoria. The club operates a target field and an Indoor Archery Facility at the Bendigo Racecourse.</p>
+		        <!-- Information about the sport and the club's approach to it -->
+		        <p>Archery is a great sport that gets you outside and keeps you active and healthy which many people find relaxing. Our club has a very family friendly approach, great social atmosphere and some very serious competitors aiming for international representation. The club invites memberships from a range of abilities and members range from 10 years to eighty plus.</p>
+		        <p>Archery is a sport that almost anyone can participate in. You don’t have to have any particular physical attribute to become good at the sport so come along and have a go … </p>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<!-- End of information about the Bendigo Target Archery Club -->
+
+		<!-- This section contains information about archery courses offered by Bendigo Target Archery Club -->
+		<div class="course">
+		  <section>
+		  	<!-- Image depicting the course is floated to the right -->
+		  	<img src="css/course.jpg" alt="Image description" style="float: right; margin-right: 10px;">
+		    <h2>Archery Courses</h2>
+		    <!-- Description of the beginner's course -->
+		    <p>Bendigo Target Archery Club holds beginner’s courses for participants aged 10 and over. Cost for the course is $99 per participant and bookings are essential. The courses are usually held on the first Saturday morning of each month, from 07.45 to 11.30, all equipment inclusive. The course is held in the onsite indoor facility during inclement weather. Course fees are not refundable if you change your mind or are unable to attend on your booked date.</p>
+		    <!-- List of the topics covered in the course -->
+		    <ul>
+		      <li>Introduction</li>
+		      <li>Equipment &amp; safety briefing</li>
+		      <li>Shooting demonstration</li>
+		      <li>Shoot your first arrows</li>
+		      <li>Bow type demonstration</li>
+		      <li>Shooting &amp; scoring</li>
+		    </ul>
+		    <!-- Information about the induction session for club membership -->
+		    <p>An induction session is held 8:00am-11:30am on the following Saturday morning for beginners’s course attendees who would like to join the club. The club membership information form is available at the induction course, and should be filled out before starting the the session. So please arrive before the session starts to leave enough time to fill out the form. Please see our Membership details for further details.</p>
+		    <!-- List of the topics covered in the induction session -->
+		    <ul>
+		      <li>Finish membership paperwork</li>
+		      <li>Club walkaround and familiarisation</li>
+		      <li>Further training</li>
+		      <li>Fletching/choosing your new arrows</li>
+		    </ul>
+		     <!-- Information for people with disabilities or visual impairment -->
+		    <p class="disabilities">As a sport, archery can cater for a range of disabilities and visual impairments. Therefore the club wholeheartedly welcomes and encourages people with a disability or visual impairment to join. All newcomers to BTAC must do our Archery Course before being accepted as a club member. Courses are usually held on our outdoor field from 7.45 – 11.30am on the first Saturday of each month, all equipment inclusive. In the event of inclement weather, courses go ahead in the onsite indoor facility. An induction session is held from 8:00am – 11:30am on the Saturday following for course attendees who would like to join the club.</p>
+		  </section>
+		</div>
+		<!-- End of information about archery courses offered by Bendigo Target Archery Club -->
+
+		<!-- This section provides information on trying archery and joining the club. -->
+		<section id="try-archery">
+		  <!-- This heading provides the title of the section. -->
+		  <h2>Try Archery</h2>
+		  <!-- This paragraph provides information about the induction session for beginners who want to join the club. -->
+		  <p>An induction session is held 8:00am-11:30am on the following Saturday morning for beginners’s course attendees who would like to join the club. The club membership information form is available at the induction course, and should be filled out before starting the the session. So please arrive before the session starts to leave enough time to fill out the form. Please see our Membership details for further details.</p>
+		  <!-- This paragraph provides contact information for questions about the club's courses. -->
+		  <p>Have any questions about our courses? Email us at bendigoarcheryclub@gmail.com.</p>
+		  <!-- This unordered list provides a list of steps for beginners after they join the club. -->
+		  <ul>
+		    <li>Finish membership paperwork</li>
+		    <li>Club walkaround and familiarisation</li>
+		    <li>Further training</li>
+		    <li>Fletching/choosing your new arrows</li>
+		  </ul>
+		</section>
+		<!-- End of information on trying archery and joining the club -->
+
+		<!-- This section provides information about archery for people with disabilities, including the club's facilities and the support they offer. -->
+		<section class="disabilities">
+		  <h2>Archery With Disabilities</h2>
+		  <p>The club supports archers with all abilities, including members competing at national and international para-archery events and the Invictus Games. Club facilities include indoor shooting facilities, paved disabled parking bays, an accessible toilet, and cement paths between buildings. The grassed outdoor fields are also used by para-archers. Experienced instructors and coaches can take you from novice through to international competitor and our members provide a friendly, supportive environment. You will need to arrange your own carer if required. Please contact us to discuss your requirements.</p>
+		  <p>As a sport, archery can cater for a range of disabilities and visual impairments. Therefore the club wholeheartedly welcomes and encourages people with a disability or visual impairment to join. All newcomers to BTAC must do our Archery Course before being accepted as a club member. Courses are usually held on our outdoor field from 7.45 – 11.30am on the first Saturday of each month, all equipment inclusive. In the event of inclement weather, courses go ahead in the onsite indoor facility. An induction session is held from 8:00am – 11:30am on the Saturday following for course attendees who would like to join the club.</p>
+		  <p>All beginners, including those with a disability or vision impairment, undergo the same instruction process on the same shooting line. If you require an assistant for your participation, your assistant must do the Archery Course with you. This is for your safety and also so that the assistant can receive instruction on how to become an archery assistant.</p>
+
+		  <!-- The club asks for advance warning about beginners with a disability or vision impairment, in order to allocate any necessary extra coaching or one-on-one coaching, within the limits of their personnel resources. -->
+
+		  <p>The club requires advance warning about beginners who have a disability or visual impairment. This will allow the club if necessary to allocate extra coaching or one-on-one coaching. Please be aware that as BTAC is run solely by volunteers and volunteer coaches who give freely of their time, our personnel resources are finite. This necessarily limits the</p>
+		</section>
+		<!-- End of information about archery for people with disabilities, including the club's facilities and the support they offer. -->
+
+		<!-- This section gives information about the come-n-try section -->
+		<section class="come-n-try">
+		  <!-- Section title -->
+		  <h2>Come 'N' Try Sessions</h2>
+		  <!-- Paragraph introducing the Come 'N' Try session -->
+		  <p>If you are interested in giving archery a go, then the Come ’N’ Try Session is designed for you. A chance to experience archery in a low commitment way.</p>
+		   <!-- Safety requirements for participants -->
+		  <p>Participants must wear fully enclosed shoes, tie long hair back and remove ear/nose/lip rings etc.</p>
+		  <!-- Information for participants with disabilities -->
+		  <p>The club is very welcoming of people who use wheelchairs or have a disability, however please contact us before booking in as we may wish to arrange a special session with coaches with relevant experience.</p>
+		  <!-- Information about the refund policy -->
+		  <p>Please be aware that there is a no refund policy for cancellation or no shows.</p>
+		  <!-- Contact information for questions or concerns -->
+		  <p>Should you wish to discuss any aspect of the session please email <a href="mailto:bendigoarcheryclub@gmail.com">bendigoarcheryclub@gmail.com</a>.</p>
+		</section>
+		<!-- End of information about the come-n-try section -->
+
+		<!-- Membership section -->
+		<div id="membership">
+		 <section>
+		  <!-- Image -->
+		  <img src="css/member.jpg" alt="Image description" style="float: right; margin-right: 10px;">
+		  <!-- Membership Fees -->
+		  <h2>Membership Fees</h2>
+		  <!-- Senior Membership Card -->
+			<div class="card">
+				<div class="card-header">
+				    <h3>Senior (18 and over)</h3>
+				</div>
+				<div class="card-body">
+					<ul>
+					    <li>$191/year</li>
+						<li>Includes:</li>
+						<ul>
+							<li>Archery Australia membership $90</li>
+							<li>Archery Victorian membership $35</li>
+							<li>Bendigo Archery Club membership $66</li>
+							<li>Insurance</li>
+						</ul>
+						<li>Membership is provisional for the first 12 months.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Under 18 Membership Card -->
+			<div class="card">
+				<div class="card-header">
+					<h3>Under 18</h3>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>$134/year</li>
+						<li>Includes:</li>
+						<ul>
+							<li>Archery Australia membership $60</li>
+							<li>Archery Victorian membership $30</li>
+							<li>Bendigo Archery Club membership $44</li>
+							<li>Insurance</li>
+						</ul>
+						<li>Membership is provisional for the first 12 months.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Family Membership Card -->
+			<div class="card">
+				<div class="card-header">
+					<h3>Family</h3>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>$382/year</li>
+						<li>Includes:</li>
+						<ul>
+							<li>Archery Australia membership $180</li>
+							<li>Archery Victorian membership $70</li>
+							<li>Bendigo Archery Club membership $132</li>
+							<li>Insurance</li>
+						</ul>
+						<li>Membership is provisional for the first 12 months.</li>
+						<li>Family membership is any combination of two or more memberships</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Archery Course Card -->
+			<div class="card">
+				<div class="card-header">
+					<h3>Archery Course</h3>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>$99</li>
+						<li>Includes:</li>
+						<ul>
+							<li>Accredited instructors</li>
+							<li>Equipment supplied</li>
+							<li>Participation Certificate</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<!-- Range Shooting Fees -->
+			<h3>Range Shooting Fees</h3>
+			<div class="card">
+				<div class="card-body">
+					<ul>
+						<li>Members with own equipment:</li>
+						<ul>
+							<li>Seniors &amp; Under 18</li>
+							<li>$4/day</li>
+						</ul>
+						<li>Individual's weekly maximum</li>
+						<ul>
+							<li>Monday to Sunday</li>
+							<li>$10/week</li>
+						</ul>
+						<li>Family weekly maximum</li>
+						<ul>
+							<li>Monday to Sunday</li>
+							<li>$20/week</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		   </section>
+		</div>
+		<!-- End of membership section -->
+
+		<!-- This section contains information about different target archery disciplines -->
+		<section class="disc">
+		  <!-- The section heading specifies the name of the section -->
+		  <h2>Target Archery Disciplines</h2>
+		  <div>
+		  	<!-- This paragraph describes the different types of archery offered at Bendigo Target Archery Club -->
+		    <p>Bendigo Target Archery Club offers Target, Indoor, and Clout  archery. Target, Indoor and Clout competitions are regularly hosted on our facilities.</p>
+		    <!-- The sub-heading provides information about Target archery -->
+		    <h3>Target</h3>
+		    <!-- This paragraph provides detailed information about Target archery, including the scoring system and number of arrows per 'end' -->
+		    <p>Target archery involves shooting at a target butt centred approximately 1.5m above ground level which will have scoring circles of up to 122cm in diameter on the target face. The target face has concentric circles and scoring starts in the centre with the smallest circle – the bulls eye – recorded as an X which equals 10 points. The next larger circle also equals 10, then 9, 8, 7, 6, 5, 4, 3, 2, 1 and then M for miss. Some target faces only have X through to 6 scoring rings. There are also a few smaller target faces where the circles are closer together. Archers usually shoot 3 or 6 arrows per ‘end’.</p>
+		    <!-- This paragraph provides links to official Archery Australia and World Archery target rounds -->
+		    <p>See the official Archery Australia Target Rounds: <a href="https://drive.google.com/file/d/1cmlRDIQkN6aA2vCPyy_e5CsValqd76n2/view?usp=share_link">AA-TargetRounds.pdf</a> and the World Archery Target Rounds: <a href="https://drive.google.com/file/d/1ON5ZQfgLcUB0J9bgHRBIvys5GtwHlHWg/view?usp=share_link">WA-TargetRounds.pdf</a></p>
+		    <!-- This paragraph provides information about the number of target lanes and archers the club can accommodate -->
+		    <p>The club accommodates approximately 50 target lanes or 150 archers shooting simultaneously, with target distances up to 90 metres.</p>
+		    <!-- This is the heading for the Indoor Archery Discipline section -->
+		    <h3>Indoor</h3>
+		    <!-- This paragraph describes the specifics of Indoor Archery, including the target face, scoring rings, distance of shooting, and use of electronic timing system -->
+		    <p>Indoor archery has smaller scoring faces than target archery and archers shoot 3 arrows per end at 18m or 25m distances. The target faces are fixed to a vertical wall centred approximately 1.2m to 1.7m above the floor. 18m distances use a 40cm diameter with X/10 through to 1 scoring rings or a ‘three spot’, which shows three separate target circles with scoring circles from X/10 to the 6 ring. The ‘three spot’ requires the archer to shoot one arrow into each of the three circles.</p>
+		    <p>The indoor shed holds 15 18m indoor target lanes. Most of the lanes also allow 25m shooting distances. The club uses an electronic timing system in the indoor halls.</p>
+		    <!-- This section describes the Clout discipline in archery -->
+		    <h3>Clout</h3>
+		    <p>The target face in clout is 15 metres across and is flat on the ground! Each scoring circle on the target is about 75cm wide and is bordered by a coloured flag identifying the standard 10 ring scoring circles. The ‘bulls eye’ in the centre of the target face is a marker post which is called the Clout. Archers shoot six arrows per end, aiming up into the air to about a 45 degree angle so their arrows travel in a large parabola.</p>
+		    <p>Clout is shot at distances from 100m to 180m depending on the archer’s age and bow division.</p>
+		    <p>See the official Archery Australia Clout Rounds: <a href="https://drive.google.com/file/d/1CUOIAsFJ7qqm5HTRr6f1xHBRFbxlhOF7/view?usp=share_link">AA-CloutRounds.pdf</a></p>
+		  </div>
+		</section>
+		<!-- End of information about different target archery disciplines -->
+
+		<!-- This section contains information about coaching at the club -->
+		<section class="coach">
+		  <div>
+		  	<!-- Heading for the coaching section -->	
+		  	<h2>Coaching</h2>
+		  	<!-- Paragraph describing the different levels of coaches -->
+		  	<p>There are 3 levels of coaches at the club. They are:</p>
+		  	<!-- Unordered list of coaches -->
+			  <ul>
+			    <li>Level 1, Archery Instructors – there are about 20 active Archery Instructors at the club.</li>
+			    <li>Level 2, Coaches (level 2) –  Jenny,  Melissa, David, and Adrian.</li>
+			    <li>Level 3, Club and Regional Coach – Shelley.</li>
+			  </ul>
+			  <!-- Paragraph describing how to identify Level 2 and 3 Coaches -->
+			  <p>The Level 2 and 3 Coaches can be identified by the shirts they wear. They look a little different to most members’ shirts to make it easier to spot them around the club. They have bright gold sleeves with “coach” written on the back and their first name on the front. Whilst always busy helping people, they are also very approachable.</p>
+			  <!-- Paragraph describing basic coaching help available on Saturday mornings -->
+			  <p>Basic coaching help is available to all archers on most Saturday mornings from 9.00 to 11.30. The Level 2 and 3 Coaches offer assistance with measuring and advising you on your first bow purchase and the setup of your new bow. More experienced archers may make arrangements for coaching by seeing the Club Coach.</p>
+			  <!-- Paragraph reminding members to respect coaches' time -->
+			  <p>Coaches and instructors deserve some time themselves to shoot so please respect their time in the afternoon.</p>
+			  <!-- Paragraph describing general workshops/seminars held each month -->
+			  <p>General workshop/seminar sessions are held each month for all members, with topics like ‘Bow Set Up and Tuning”, ‘Purchasing the correct Arrows’, ‘Arrow Fletching and Maintenance’, etc.</p>
+		  </div>
+		</section>
+		<!-- End of information about coaching at the club -->
+
+		<!-- Coach section containing hot weather precautions and storm safety tips -->
+		<section class="coach">
+		  <div>
+		  	  <!-- Heading for coaching tips section -->
+			  <h2>Coaching Tips</h2>
+			  <!-- Subheading for hot weather precautions -->
+			  <h3>Hot Weather Precautions</h3>
+			  <!-- Paragraph reminding members to wear sun protection -->
+			  <p>Please wear sun protection.</p>
+			  <!-- Unordered list of hot weather precautions -->
+			  <ul>
+			    <li>Wear a hat.</li>
+			    <li>Uses sunscreen. The club also provides free sun lotion for members.</li>
+			    <li>Watch for signs of dehydration. The urine colour charts in the toilets to help you self-monitor.</li>
+			    <li>Drink plenty of water. There is free filtered tank water in the kitchen and also cold drinks for sale in the fridge.</li>
+			    <li>While on the field take every opportunity to retreat to the shades between ends.</li>
+			    <li>Sit out an end or two from time to time when you’re just practising.</li>
+			    <li>Remember this is sport by choice, so in very hot weather it is sometimes better to sit it out in the shade and spectate.</li>
+			  </ul>
+			  <!-- Paragraph introducing storm safety tips -->
+			  <p>With summer also comes the risk of storms and strong winds …</p>
+			  <!-- Unordered list of storm safety tips -->
+			  <ul>
+			    <li>Never shoot outside as a storm approaches.</li>
+			    <li>Do not shelter under trees in windy weather.</li>
+			  </ul>
+		  </div>
+		</section>
+		<!-- End of section containing hot weather precautions and storm safety tips -->
+
+		<!-- This section provides guidance for purchasing a bow for new members. -->
+		<section class="coach">
+			<!-- The div contains information about purchasing a bow. -->
+		    <div>
+		      <!-- The h2 tag contains the heading for this section. -->
+			  <h2>Purchasing your first bow</h2>
+			  <!-- The first paragraph provides advice to new members about hiring equipment before purchasing a bow. -->
+			  <p>New members are encouraged not to go out and buy a bow until you have spoken to a coach. It is recommended that you hire equipment for the first two months and then see a coach to get measured and to discuss the options.</p>
+			  <!-- The second paragraph provides information about getting help with setting up a new bow from a coach. -->
+			  <p>When you do have a new bow, book in advance with a coach to obtain help with setting it up for the first time. This can be done on most Saturday mornings, however the time for this is 09.00 sharp. Booking via email is preferred.</p>
+			  <!-- The third paragraph highlights the importance of matching arrows to the bow and archer's draw length. -->
+			  <p>Please be aware that arrows must in general be matched both to the bow and to the archer’s draw length.</p>
+			</div>
+		</section>
+		<!-- End of section provides guidance for purchasing a bow for new members. -->
+
+		<!-- This section provides instructions and tips for aiming in archery. -->
+		<section class="coach">
+			<div>
+			  <!-- Heading for the section -->
+			  <h2>Aiming</h2>
+			  <!-- Paragraph providing information about where the arrow goes when released. -->
+			  <p>Arrows go where the bow is pointing at the time of release and during the time it takes for the arrow travel to clear the bow.</p>
+			  <!-- Paragraph providing information about using back and front sights to aim. -->
+			  <p>To point the bow in the right place we use a back sight and a front sight, unless you are just using your judgement to guess where the bow is pointed. The back sight must be aligned with the front sight and straight at the gold at the instant of release. We must use all our training and practice of skills to keep the bow stable at the instant of release and until the arrow has cleared the bow.</p>
+			  <!-- Paragraph providing information about the back and front sights on a bow. -->
+			  <p>The back sight on a bow is the string. The front sight is the circle, pin or dot on the sight, or for bare bow archers, the tip of the arrow.</p>
+			  <!-- Paragraph providing information about aiming and focusing the eye's vision. -->
+			  <p>To aim, only focus the eye’s vision on the gold on the target face. Focus with determination. The front sight (circle or dot) should drift down to the gold as part of the shooting process, but do not adjust the eye’s focus onto the circle/dot. Let the brain naturally centre the circle on the gold. Ensure the back sight (the string) is aligned on the side of the bow’s riser “cut out” or through the side of the circle of the sight (for a recurver). For compounders using a peep in the string the concept is exactly the same.</p>
+			  <!-- Paragraph providing information about checking the string is vertical to avoid left and right arrows. -->
+			  <p>Check that the string is vertical as bow cant (tilting) variation will cause left and right arrows; to do this if you are a recurver use the side of the target face as a vertical reference, or for a compounder use your bubble. Expand through the clicker (if you are using a clicker) and release the arrow.</p>
+			  <!-- Paragraph providing information about the importance of repetitive precision in archery. -->
+			  <p>Skills acquisition requires determined effort. Archery is the art of repetitive precision. In time, the more natural and subconscious the process the better. The arrow goes where the bow is pointed at the instance of release and clearing of the bow.</p>
+			</div>
+		</section>
+		<!-- End of section provides instructions and tips for aiming in archery. -->
+
+		<!-- This section provides information on the importance of core stability in archery. -->		
+		<section class="coach">
+			<div>
+			  <!-- Heading for the section. -->
+			  <h2>Core Stability</h2>
+			  <!-- Paragraph discussing the significance of core stability in archery. -->
+			  <p>Why are coaches so concerned with core strength and stability?</p>
+			  <p>The most important technique or factor in scoring well in archery is Core Stability — that is, holding a fully-drawn bow without any wobble. Without a solid core, an archer will need to be very lucky to get a good score. The core is the foundation of the shot – without a solid core there is little an archer can consistently do to overcome instability. The core is said to be over 80% of the shot and all technique needs to be built on top of a solid foundation.</p>
+			  <!-- Paragraph showing the effect of wobbling on aiming accuracy. -->
+			  <p>An archer shooting at 50 metres onto the large 122cm target aiming at the cntre oif the target but has a 9mm wobble (the movement of the bow) will miss the gold by over 20cm. This shows how important core stability is in archery.</p>
+			  <!-- Paragraph suggesting exercises to improve core stability. -->
+		      <p>Core stability can be improved through exercises such as planks, side planks, and bird dogs. It is also important to work on posture and balance. A strong core will not only improve your archery skills but also help prevent injury.</p>
+			</div>
+		</section>
+		<!-- End of section provides information on the importance of core stability in archery. -->
+
+		<!-- This section contains information about upcoming archery events -->
+		<section id="events">
+			<!-- Heading for the section -->
+		    <h2>Upcoming Events</h2>
+		    <!-- First event details -->
+		    <div class="event">
+		    	<!-- Event image -->
+		        <div class="event-image">
+		            <img src="css/event1.jpg" alt="Event 1">
+		        </div>
+		        <!-- Event details -->
+		        <div class="event-details">
+		        	<!-- Event name -->
+		            <h3>Beginners' Workshop</h3>
+		            <!-- Event date, time, and location -->
+		            <p>Date: 1st May 2023</p>
+		            <p>Time: 10am - 12pm</p>
+		            <p>Location: Archery Range</p>
+		        </div>
+		    </div>
+		    <!-- Second event details -->
+		    <div class="event">
+		    	<!-- Event image -->
+		        <div class="event-image">
+		            <img src="css/event2.jpg" alt="Event 2">
+		        </div>
+		        <!-- Event details -->
+		        <div class="event-details">
+		        	<!-- Event name -->
+		            <h3>Archery Competition</h3>
+		            <!-- Event date, time, and location -->
+		            <p>Date: 15th May 2023</p>
+		            <p>Time: 1pm - 5pm</p>
+		            <p>Location: Archery Range</p>
+		        </div>
+		    </div>
+		    <!-- Third event details -->
+		    <div class="event">
+		    	<!-- Event image -->
+		        <div class="event-image">
+		            <img src="css/event3.jpg" alt="Event 3">
+		        </div>
+		        <!-- Event details -->
+		        <div class="event-details">
+		        	<!-- Event name -->
+		            <h3>Summer Camp</h3>
+		            <!-- Event date, time, and location -->
+		            <p>Date: 1st - 10th June 2023</p>
+		            <p>Time: 9am - 4pm</p>
+		            <p>Location: Archery Range</p>
+		        </div>
+		    </div>
+		    <!-- Fourth event details -->
+		    <div class="event">
+		    	<!-- Event image -->
+		        <div class="event-image">
+		            <img src="css/event4.jpg" alt="Event 4">
+		        </div>
+		        <!-- Event details -->
+		        <div class="event-details">
+		        	<!-- Event name -->
+		            <h3>New Event</h3>
+		            <!-- Event date, time, and location -->
+		            <p>Date: 1st July 2023</p>
+		            <p>Time: 2pm - 4pm</p>
+		            <p>Location: Archery Range</p>
+		        </div>
+		    </div>
+		</section>
+		<!-- End of section contains information about upcoming archery events -->
+
+		<!-- This is the Contact section with the relevant details and a form for submitting messages. -->
+		<section id="contact">
+		  <h2>Contact</h2>
+		  <!-- Contact details with the address, email, phone number, and club hours. -->
+		  <div class="contact-details">
+		    <p><strong>Address:</strong> Bendigo Target Archery Club<br>Golf Course Rd.<br>Ascot VIC 3551</p>
+		    <p><strong>Email:</strong> bendigoarcheryclub@gmail.com</p>
+		    <p><strong>Phone:</strong> 0401573236</p>
+		    <p><strong>Club Hours:</strong></p>
+		    <ul>
+		      <li>Saturday 8:00am to 4:00pm.</li>
+		      <li>Thursday 8:00am to 12:00pm.</li>
+		      <li>Wednesday 6:30pm to 9pm.</li>
+		    </ul>
+		  </div>
+		  <!-- Form for submitting messages with fields for name, email, and message. -->
+		  <form>
+		    <label for="name">Name:</label>
+		    <input type="text" id="name" name="name" required>
+		    <label for="email">Email:</label>
+		    <input type="email" id="email" name="email" required>
+		    <label for="message">Message:</label>
+		    <textarea id="message" name="message" required></textarea>
+		    <input type="submit" value="Submit">
+		  </form>
+		</section>
+		<!-- End of contact section -->
+
+	</main>
+	<!-- End of main section containing the banner slider and caption etc. -->
+
+	<!-- This is the footer section for the website. -->
+    <footer>
+    	<!-- This is the copyright notice for the website -->
+	    <p>&copy; 2023 Leigh Brookshaw, Stijn Dekeyser, & Matthew Mengel, School of Sciences., USQ.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,782 @@
+/* General styles */
+body {
+    margin: 0;
+    color: #fff;
+    font: 12px / 18px Arial, Helvetica, sans-serif;
+    background: #282828;
+  }
+  
+  /* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #282828;
+  }
+
+  /* Styles for the logo image */
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  /* Styles for the logo text */
+  .logo span {
+  font-family: Arial, Helvetica, sans-serif; /* change this to your desired font */
+  font-size: 15px; /* change this to your desired font size */
+  font-weight: bold; /* optionally, you can make the font bold */
+  letter-spacing: 0.5px; /* optionally, you can add letter spacing */
+}
+
+/* Navbar container */
+nav {
+    background-color: #282828; /* Set the background color */
+    height: 50px; /* Set the height of the navbar */
+    display: flex; /* Set the display property to flex */
+    justify-content: space-between; /* Set the horizontal spacing between items */
+    align-items: center; /* Center the items vertically */
+    padding: 0 30px; /* Add padding to the navbar */
+  }
+
+/* Navbar logo */
+nav .logo {
+    font-size: 30px; /* Set the font size of the logo */
+    color: #fff; /* Set the font color of the logo */
+  }
+
+/* Navbar links */
+nav ul {
+    list-style: none; /* Remove the bullet points */
+    display: flex; /* Set the display property to flex */
+    align-items: center; /* Center the items vertically */
+  }
+
+/* Navbar link items */
+nav li {
+    margin-left: 20px; /* Add spacing between the items */
+    font-size: 150%; /* Set font size to 100% */
+  }
+
+/* Styles for links */
+a {
+    color: #fff; /* Change the font color to white */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer; /* Change the cursor to pointer when hovering over links */
+  }
+
+/* Styles for navigation links */
+nav a {
+    display: inline-block; /* Add this property to prevent the link from shifting on hover */
+    padding: 10px 5px; /* Change the padding to 10px top/bottom and 5px left/right */
+    text-decoration: none;
+    color: #fff; /* Change the font color to white */
+    transition: all 0.8s ease;
+  }
+
+/* Navbar links on hover */
+nav a:hover {
+    color: #fff; /* Set the font color back to white on hover */
+    background-color: #4CAF50; /* Set the background color on hover */
+    text-decoration: none; /* Remove underline on hover */
+    padding: 15px 15px; /* Increase padding to spread the hover effect */
+    transition: background-color 0.8s ease;
+    transform: scale(1.1); /* Add a scale transform to expand the link on hover */
+  }
+
+/* Navbar active link */
+nav .active {
+    color: #4CAF50; /* Set the font color for the active link */
+    font-weight: bold; /* Make the active link bold */
+  }
+
+/* Remove underline from navbar links */
+nav li a {
+    text-decoration: none;
+  }
+
+/* Media query for responsive navbar */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Set the flex direction to column */
+      height: auto; /* Set the height to auto to accommodate the content */
+      padding: 15px; /* Reduce the padding */
+      justify-content: center; /* Center the items vertically */
+    }
+
+/* Styles for the navigation menu */
+nav ul {
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+        width: 100%; /* Set width to 100% */
+    text-align: center; /* Center the items horizontally */
+  }
+
+nav li {
+    margin: 10px 0; /* Add spacing between the items */
+    font-size: 120%; /* Decrease the font size for better readability */
+    text-align: center; /* Center the items */
+  }
+
+nav a:hover {
+    background-color: transparent; /* Remove the background color on hover */
+    transform: none; /* Remove the scale transform on hover */
+    padding: 10px 5px; /* Reset the padding on hover */
+  }
+
+nav .logo {
+    font-size: 24px; /* Decrease the font size of the logo */
+    margin-bottom: 10px; /* Add spacing below the logo */
+    text-align: center; /* Center the logo */
+  }
+}
+
+/* Banner styles */
+/* Set the position of the banner */
+#banner {
+  position: relative;
+}
+
+/* Set the properties for the slider */
+#banner .slider {
+  position: relative;
+  overflow: hidden;
+  height: 590px;
+}
+
+/* Set the properties for the slider images */
+#banner .slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Set the properties for the active slider image */
+#banner .slider .active {
+  opacity: 1;
+}
+
+/* Set the position and style for the caption */
+#banner .caption {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Set the style for the heading in the caption */
+#banner .caption h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.85;
+}
+
+/* Set the style for the paragraph in the caption */
+#banner .caption p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.85;
+}
+
+/* Set the position and style for the slider controls */
+#banner .slider-controls {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  opacity: 0.85;
+}
+
+/* Set the style for the slider control buttons */
+#banner .slider-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  display: flex;
+  align-items: center;
+}
+
+#banner #prev i,
+#banner #next i {
+  margin-right: 5px;
+}
+
+#banner #prev i:before,
+#banner #next i:before {
+  font-family: "Font Awesome";
+}
+
+#banner #prev {
+  margin-right: auto;
+}
+
+#banner #next {
+  position: absolute;
+  right: 0;
+  margin-right: -220px;
+}
+
+
+#banner #next i {
+  content: "\f105";
+  margin-left: 30px;
+}
+
+#banner #prev i {
+  content: "\f104";
+  margin-right: 30px;
+}
+
+#banner .slide-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .slide-indicators span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Update the active and hover states for the slide indicators */
+#banner .slide-indicators span.active,
+#banner .slide-indicators span:hover {
+  background-color: #fff;
+}
+
+#banner .slide-indicators span:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Slider animation */
+@keyframes slide {
+  0% {
+    opacity: 0;
+}
+
+5% {
+opacity: 1;
+}
+
+25% {
+opacity: 1;
+}
+
+30% {
+opacity: 0;
+}
+
+100% {
+opacity: 0;
+}
+}
+
+/* Set the animation properties for each slide */
+#banner .slider img:nth-child(1) {
+animation: slide 16s linear infinite;
+}
+
+#banner .slider img:nth-child(2) {
+animation: slide 16s linear infinite;
+animation-delay: -4s;
+}
+
+#banner .slider img:nth-child(3) {
+animation: slide 16s linear infinite;
+animation-delay: -8s;
+}
+
+#banner .slider img:nth-child(4) {
+animation: slide 16s linear infinite;
+animation-delay: -12s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+#banner .slider img {
+height: auto;
+max-width: 100%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+#banner .caption {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 90%;
+}
+
+#banner .caption h2 {
+font-size: 2rem;
+}
+
+#banner .caption p {
+font-size: 1rem;
+}
+
+#banner .slider-controls {
+max-width: 100%;
+padding: 0px 10px;
+}
+
+#banner #prev {
+margin-right: 0;
+}
+
+#banner #next {
+margin-right: 0;
+margin-left: -70px;
+ }
+}
+   
+.club-info {
+  margin: 20px;
+  padding: 20px;
+  background-color: #2B2B2B;
+  border: 0;
+}
+
+/* Welcome section styles */
+.club-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.club-info p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.club-info a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.club-info a:hover {
+  text-decoration: underline;
+}
+
+/* About section styles */
+#about {
+  background-color: #2B2B2B;
+  padding: 50px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#about p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#about ul {
+  list-style: disc;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#about li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* About Us specific styles */
+#about-us {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Archery course section styles */
+.course {
+  background-color: #2B2B2B;
+  border: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.course h2 {
+  font-size: 24px;
+}
+
+.course ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+.course .disabilities {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* Style for the courses section */
+#try-archery {
+  margin-bottom: 30px;
+  background-color: #2B2B2B;
+  margin: 20px;
+  padding: 20px;
+}
+
+#try-archery h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#try-archery p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#try-archery ul {
+  font-size: 12px;
+  list-style-type: disc;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#try-archery li {
+  margin-bottom: 5px;
+}
+
+/* Style for the disabilities section */
+.disabilities {
+  margin-bottom: 30px;
+  background-color: #2B2B2B;
+  margin: 20px;
+  padding: 20px;
+}
+
+.disabilities h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.disabilities p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.come-n-try {
+  border: 0;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #2B2B2B;
+}
+
+.come-n-try h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.come-n-try p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.come-n-try a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.come-n-try a:hover {
+  text-decoration: underline;
+}
+
+/* Style for the membership section */
+#membership {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #2B2B2B;
+  margin: 20px;
+  padding: 20px;
+  flex-direction: row;
+  line-height: 1.5;
+}
+
+#membership > * {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#membership h3 {
+  background-color: #2B2B2B;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
+#membership ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-top: none;
+}
+
+#membership li {
+  padding: 5px 10px;
+}
+
+#membership li:first-child {
+  font-weight: bold;
+}
+
+#membership li:last-child {
+  border-bottom: none;
+}
+
+#membership ul > * {
+  width: 100%;
+}
+
+#membership ul ul {
+  background-color: #2B2B2B;
+  border: none;
+  border-top: 0;
+  padding: 5px 10px;
+}
+
+#membership ul ul li {
+  font-weight: normal;
+}
+
+#membership h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Style for the target archery discipline section */
+.disc {
+  background-color: #2B2B2B;
+  padding: 20px;
+  margin: 20px;
+}
+
+.disc h2 {
+  font-size: 24px;
+}
+
+.disc p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.disc div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.disc div ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.disc div ul li {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.disc div ul li span {
+  font-weight: bold;
+}
+
+.disc a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.disc a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .disc {
+    display: inline-block;
+    align-items: center;
+  }
+
+  .disc div {
+    margin-left: 50px;
+  }
+
+  .disc div ul li {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+}
+
+/* Style for the coaching section */
+.coach {
+  background-color: #2B2B2B;
+  padding: 20px;
+  margin: 20px;
+}
+
+.coach h2 {
+  font-size: 24px;
+}
+
+/* Style for the event section */
+#events {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2B2B2B;
+    padding: 20px;
+    margin: 20px;
+}
+
+.event {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#events h2 {
+  font-size: 24px;
+}
+
+.event-image {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+}
+
+.event-details {
+    width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+    .event {
+        flex-direction: column;
+    }
+    
+    .event-image {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .event-details {
+        width: 100%;
+    }
+}
+
+/* Style for the contact section */
+#contact {
+  background-color: #2B2B2B; /* Set the background color of the contact section */
+  margin: 20px; /* Set the margin around the contact section */
+  padding: 20px; /* Set the padding inside the contact section */
+}
+
+#contact h2{
+  font-size: 24px; /* Set the font size of the contact section heading */
+}
+.contact-details {
+  margin-bottom: 30px; /* Set the margin at the bottom of the contact details section */
+}
+
+.contact-details p {
+  margin-bottom: 10px; /* Set the margin at the bottom of each contact detail paragraph */
+}
+
+.contact-details strong {
+  font-weight: bold; /* Make the text of each contact detail bold */
+}
+
+#contact form {
+  display: flex; /* Set the display property of the contact form to flex */
+  flex-direction: column; /* Set the flex direction of the contact form to column */
+  max-width: 600px; /* Set the maximum width of the contact form */
+  margin: auto; /* Center the contact form horizontally */
+}
+
+#contact label {
+  margin-bottom: 10px; /* Set the margin at the bottom of each label in the contact form */
+  font-weight: bold; /* Make the text of each label in the contact form bold */
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px; /* Set the padding of each input field and textarea in the contact form */
+  margin-bottom: 20px; /* Set the margin at the bottom of each input field and textarea in the contact form */
+  border: none; /* Remove the border of each input field and textarea in the contact form */
+  border-radius: 3px; /* Set the border radius of each input field and textarea in the contact form */
+  font-size: 16px; /* Set the font size of each input field and textarea in the contact form */
+}
+
+#contact input[type="submit"] {
+  background-color: #4CAF50; /* Set the background color of the submit button in the contact form */
+  color: white; /* Set the text color of the submit button in the contact form */
+  cursor: pointer; /* Set the cursor style of the submit button in the contact form */
+}
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #3e8e41; /* Set the background color of the submit button in the contact form on hover */
+}
